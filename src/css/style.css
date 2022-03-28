@@ -1,0 +1,339 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.register {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -212px;
+  margin-left: -200px;
+}
+
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -212px;
+  margin-left: -200px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  border: 2px solid #424242;
+}
+.container__logo {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  background-color: #474747;
+  padding: 10px 0;
+  letter-spacing: 4px;
+  width: 80%;
+  font-weight: 300;
+  margin: 5% 0;
+  color: white;
+}
+.container__logo span {
+  font-weight: 500;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+}
+.container form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  width: 100%;
+  padding: 25px 0 0 0;
+}
+.container form input {
+  margin-top: 10px;
+  font-size: 17px;
+  padding: 0 5px;
+}
+.container form button {
+  margin: 10% 0;
+  border-radius: 5px;
+  border: 1px solid #424242;
+  background: none;
+  padding: 15px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+  transition: 0.3s;
+}
+.container form button:hover {
+  background-color: #424242;
+  color: white;
+}
+.container form span {
+  color: #ff0000;
+  font-size: 15px;
+  padding: 5px 0;
+  position: absolute;
+  margin-top: 55px;
+}
+
+.leads__container {
+  margin: 20px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.leads .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.leads .header__logo {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  background-color: #474747;
+  padding: 10px 0;
+  letter-spacing: 4px;
+  width: 320px;
+  font-weight: 300;
+  color: white;
+}
+.leads .header__logo span {
+  font-weight: 500;
+}
+.leads .header__title {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  margin-left: 30%;
+}
+.leads .button__newLeads {
+  margin: 50px 0;
+}
+.leads .button__newLeads a {
+  position: absolute;
+  text-decoration: none;
+  padding: 15px 80px;
+  background-color: #00bcdd;
+  font-weight: bold;
+  font-size: 23px;
+  color: white;
+  transition: 0.3s;
+}
+.leads .button__newLeads a:hover {
+  background-color: #fafafa;
+  border: 1px solid #00bcdd;
+  color: #00bcdd;
+}
+.leads .grid {
+  margin-top: 50px;
+  display: grid;
+  grid-column: 3;
+  grid-row: 3;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+.leads .grid__client {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #363636;
+}
+.leads .grid__data {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  background-color: #363636;
+}
+.leads .grid__meeting {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  background-color: #363636;
+}
+.leads .grid__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  font-size: 24px;
+  color: white;
+}
+.leads .grid__teste {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  background-color: #363636;
+}
+
+.createLeads__container {
+  margin: 20px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.createLeads .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.createLeads .header__logo {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  background-color: #474747;
+  padding: 10px 0;
+  letter-spacing: 4px;
+  width: 320px;
+  font-weight: 300;
+  color: white;
+}
+.createLeads .header__logo span {
+  font-weight: 500;
+}
+.createLeads .header__title {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  margin-left: 30%;
+}
+.createLeads .form {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.createLeads .form__camp1 {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+.createLeads .form__camp1 label {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 10px 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.createLeads .form__camp1 input {
+  font-size: 15px;
+  padding: 2px 3px;
+  margin-top: 5px;
+}
+.createLeads .form__camp1 span {
+  position: absolute;
+  margin-top: 45px;
+  color: #ff0000;
+}
+.createLeads .form__camp2 {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  font-weight: bold;
+}
+.createLeads .form__camp2--checkfield {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.createLeads .form__camp2--checkfield label:nth-child(2n) {
+  background-color: #c7c7c7;
+}
+.createLeads .form__camp2--checkfield label:nth-child(2n+1) {
+  background-color: #f1f1f1;
+}
+.createLeads .form__camp2--checkfield label:nth-child(1) {
+  background-color: #8b8b8b;
+}
+.createLeads .form__camp2--checkfield label input {
+  margin-right: 30px;
+  margin-left: 20px;
+  border-right: 1px solid #8b8b8b;
+}
+.createLeads .form__camp2 button {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 20px;
+  padding: 10px 0;
+  cursor: pointer;
+  background-color: #00bcdd;
+  border: none;
+  color: white;
+  transition: 0.3s;
+}
+.createLeads .form__camp2 button:hover {
+  background: none;
+  color: #00bcdd;
+  border: 1px solid #00bcdd;
+}
+.createLeads .form__camp2 .saveButton {
+  background-color: #00ff0d;
+  border: none;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
