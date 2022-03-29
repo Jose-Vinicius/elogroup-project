@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 
+let clients = JSON.parse(localStorage.getItem('@clients'));
+
 export function Leads(){
 
-     const clientList = async () => {
-        let clients = JSON.parse(localStorage.getItem('@clients'));
+    let clients = JSON.parse(localStorage.getItem('@clients'));
+
+    const clientList = async () => {
         let gridContainer = document.querySelector('.grid');
         const client = clients.map(({clientName}) => `
         <div class="grid__teste grid__item">
